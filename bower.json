@@ -1,0 +1,18 @@
+{
+  "name": "mjonathan.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/michaeljonathan/mjonathan.com",
+  "description": "Michael Jonathan Homepage",
+  "main": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3"
+  }
+}
