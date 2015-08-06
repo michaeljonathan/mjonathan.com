@@ -2,7 +2,9 @@
 
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
+	minifyCss = require('gulp-minify-css'),
 	concat = require('gulp-concat'),
+	uglifyJs = require('gulp-uglify'),
 	webserver = require('gulp-webserver');
 
 /* Compile CSS and JS */
@@ -18,18 +20,21 @@ var sassSrc = './app/scss/**/*.scss',
 gulp.task('sass', function() {
 	gulp.src(sassSrc)
 		.pipe(sass().on('error', sass.logError))
+		.pipe(minifyCss())
 		.pipe(gulp.dest(compileDest));
 });
 
 gulp.task('scripts:app', function() {
 	gulp.src(scriptsAppSrc)
 		.pipe(concat('app.js'))
+		.pipe(uglifyJs())
 		.pipe(gulp.dest(compileDest));
 });
 
 gulp.task('scripts:vendor', function() {
 	gulp.src(scriptsVendorSrc)
 		.pipe(concat('vendor.js'))
+		.pipe(uglifyJs())
 		.pipe(gulp.dest(compileDest));
 });
 

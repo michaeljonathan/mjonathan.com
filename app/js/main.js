@@ -37,9 +37,9 @@ mjApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 					}
 				]
 			},
-			controller: function($scope, $sce, projectDetails) {
+			controller: ['$scope', '$sce', 'projectDetails', function($scope, $sce, projectDetails) {
 				$scope.projectDetails = $sce.trustAsHtml(projectDetails);
-			}
+			}]
 		})
 
 		// About
