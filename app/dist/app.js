@@ -2,7 +2,8 @@
 
 var mjApp = angular.module('mjApp', ['ui.router']);
 
-mjApp.config(function($stateProvider, $urlRouterProvider) {
+// App Config
+mjApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
 	// Route: default
 	$urlRouterProvider.otherwise('/');
@@ -28,7 +29,17 @@ mjApp.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('projects.detail', {
 			url: '/{projectId:[A-Za-z0-9\-]{1,100}}',
-			templateUrl: 'templates/projects.detail.html'
+			templateUrl: 'templates/projects.detail.html',
+			resolve: {
+				projectDetails: ['$stateParams', 'projects',
+					function($stateParams, projects) {
+						return projects.get($stateParams.projectId);
+					}
+				]
+			},
+			controller: function($scope, $sce, projectDetails) {
+				$scope.projectDetails = $sce.trustAsHtml(projectDetails);
+			}
 		})
 
 		// About
@@ -36,4 +47,23 @@ mjApp.config(function($stateProvider, $urlRouterProvider) {
 			url: '/about',
 			templateUrl: 'templates/about.html'
 		});
-});
+}]);
+
+// Projects Factory
+mjApp.factory('projects', ['$http', function($http) {
+
+	var get = function(projectId) {
+		return $http.get(_getProjectPath(projectId))
+		.then(function(response) {
+			return response.data;
+		});
+	};
+
+	var _getProjectPath = function(projectId) {
+		return '/data/projects/' + projectId + '.html';
+	};
+
+	return {
+		get: get
+	};
+}]);
