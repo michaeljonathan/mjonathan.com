@@ -1,5 +1,25 @@
 $mj-grey: #333;
 
-h1 {
-	color: $mj-grey;
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cc {
+	max-width: 1280px;
+	padding: 30px 50px;
+}
+
+header {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slice {
+	min-height: 200px;
+}
+
+footer {
+	background-color: $mj-grey;
+	color: #fff;
+	text-align: center;
 }
