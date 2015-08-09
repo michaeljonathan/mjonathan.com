@@ -1,5 +1,42 @@
 .page--home {
 
+	.slice--home {
+
+		.cc {
+			@media (min-width: $desk-min) {
+				padding-top: 60px;
+				padding-bottom: 60px;
+			}
+		}
+
+		.slice_image {
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.slice_text {
+			color: $primary-color;
+			@media (max-width: $mob-max) {
+				margin-top: 20px;
+			}
+
+			h2 {
+				margin-top: 7px;
+			}
+			.slice_snippet {
+				margin-top: 18px;
+			}
+			.slice_link {
+				display: block;
+				margin-top: 18px;
+				text-transform: uppercase;
+				font-family: $heading-font;
+				font-size: 24px;
+			}
+		}
+	}
+
 	.slice--home-hi {
 		background-color: #333;
 		color: #fff;
@@ -12,7 +49,7 @@
 			padding-top: 100px;
 			padding-bottom: 100px;
 			@media (max-width: $mob-max) {
-				padding: 45px 15px;
+				padding: 70px 15px;
 			}
 		}
 
@@ -30,6 +67,59 @@
 			opacity: 0.5;
 			@media (max-width: $mob-max) {
 				border-top-width: 1px;
+			}
+		}
+	}
+
+	.slice--home-psalmist {
+		@media (min-width: $desk-min) {
+			.slice_image {
+				float: right;
+				width: 50%;
+				text-align: right;
+			}
+			.slice_text {
+				float: left;
+				width: 50%;
+				margin-top: 45px;
+			}
+		}
+	}
+
+	.slice--home-n2 {
+		background-color: #f0f0f0;
+		@media (min-width: $desk-min) {
+			.cc {
+				position: relative;
+				padding-bottom: 40px;
+			}
+			.slice_image {
+				width: 70%;
+			}
+			.slice_text {
+				position: absolute;
+				top: 60px;
+				right: 50px;
+				width: 40%;
+				text-align: center;
+			}
+		}
+	}
+
+	.slice--home-kit {
+		@media (min-width: $desk-min) {
+			.slice_image {
+				float: right;
+				width: 50%;
+				text-align: center;
+				img {
+					max-height: 400px;
+				}
+			}
+			.slice_text {
+				float: left;
+				width: 50%;
+				margin-top: 45px;
 			}
 		}
 	}

@@ -35,9 +35,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
+.preheading {
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	@media (max-width: $mob-max) {
+		font-size: 16px;
+	}
+}
+
 h1 {
 	font-size: 48px;
 	letter-spacing: 2px;
+}
+
+h2 {
+	font-size: 36px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	@media (max-width: $mob-max) {
+		font-size: 30px;
+	}
 }
 
 a {
@@ -49,6 +67,10 @@ p {
 	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: 0.3px;
+	@media (max-width: $mob-max) {
+		font-size: 13px;
+		letter-spacing: 0.2px;
+	}
 }
 
 /* Basic sizes */ 
@@ -87,6 +109,7 @@ header {
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 		@media (min-width: $desk-min) {
 			position: fixed;
+			z-index: 1;
 		}
 	}
 
