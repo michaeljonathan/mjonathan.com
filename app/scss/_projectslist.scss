@@ -1,0 +1,57 @@
+.page--projects-list {
+	padding: 0 15px;
+
+	.project-li {
+		display: block;
+		max-width: 800px;
+		margin: 20px auto;
+		padding: 40px;
+		text-align: center;
+		border: 2px solid $primary-color;
+		@media (max-width: $mob-max) {
+			padding: 25px;
+		}
+		&:hover {
+			border-color: $alt-color;
+		}
+
+		>* {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.preheading {
+			font-weight: 400;
+			color: $primary-color;
+		}
+
+		h2 {
+			margin-top: 5px;
+			text-transform: uppercase;
+			@media (min-width: $desk-min) {
+				font-size: 60px;
+			}
+			@media (max-width: $mob-max) {
+				font-size: 40px;
+				font-weight: 400;
+			}
+		}
+
+		hr {
+			margin-top: 15px;
+			border: none;
+			border-top: 1px solid $primary-color;
+			width: 50%;
+			opacity: 0.3;
+		}
+
+		.description {
+			margin-top: 15px;
+			color: $primary-color;
+			@media (min-width: $desk-min) {
+				max-width: 70%;
+			}
+		}
+	}
+
+}

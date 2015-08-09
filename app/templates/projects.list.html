@@ -1,15 +1,55 @@
-<div class="slice slice--project-li">
-	<span ui-sref="projects.detail({projectId:'psalmist'})">See Psalmist</span>
-</div>
-<div class="slice slice--project-li">
-	<span ui-sref="projects.detail({projectId:'n2'})">See N2</span>
-</div>
-<div class="slice slice--project-li">
-	<span ui-sref="projects.detail({projectId:'kit'})">See KIT</span>
-</div>
-<div class="slice slice--project-li">
-	<span ui-sref="projects.detail({projectId:'tilt380'})">See tilt380</span>
-</div>
-<div class="slice slice--project-li">
-	<span ui-sref="projects.detail({projectId:'i-am-hazard'})">See I am Hazard</span>
+<div class="page--projects-list">
+
+	<a class="slice project-li" ui-sref="projects.detail({projectId:'psalmist'})">
+		<p class="preheading">Ember.js + Sails.js + MongoDB</p>
+		<h2>Psalmist</h2>
+		<hr>
+		<p class="description">
+			Psalmist is a simple web app I created to learn Ember.js. It's currently a work-in-progress worship presentation software. It is a purely front-end client, and relies on a Sails.js back-end RESTful API server to store service lists, songs, backgrounds, etc.
+		</p>
+	</a>
+
+	<a class="slice project-li" ui-sref="projects.detail({projectId:'n2'})">
+		<p class="preheading">Django (Python) + MySQL</p>
+		<h2>N2: University Notices Version 2</h2>
+		<hr>
+		<p class="description">
+			A user-customizable web-based announcement board for university students.<br>
+			<br>
+			Built with HTML + CSS + JS; backed by Django and a MySQL database.
+		</p>
+	</a>
+
+	<a class="slice project-li" ui-sref="projects.detail({projectId:'kit'})">
+		<p class="preheading">Android (Java)</p>
+		<h2>KIT: Keep In Touch</h2>
+		<hr>
+		<p class="description">
+			KIT is an integrated medical alarm - mini social network solution, for the elderly or anyone who may require quick assistance.<br>
+			<br>
+			Build as a native Android app, written in Java and backed by a Parse server.
+		</p>
+	</a>
+
+	<a class="slice project-li" ui-sref="projects.detail({projectId:'tilt380'})">
+		<p class="preheading">C# + DirectX + Windows 8</p>
+		<h2>Tilt380</h2>
+		<hr>
+		<p class="description">
+			A simple, casual 3D motion-driven game for Windows 8 tablets, featuring 3D rendering via DirectX.<br>
+			<br>
+			Written in native C#.</p>
+	</a>
+
+	<a class="slice project-li" ui-sref="projects.detail({projectId:'i-am-hazard'})">
+		<p class="preheading">Slick2D + Java</p>
+		<h2>I am Hazard</h2>
+		<hr>
+		<p class="description">
+			A biology trivia game written in Java via the Slick2D framework.<br>
+			<br>
+			A university assignment for software modelling.
+		</p>
+	</a>
+
 </div>
