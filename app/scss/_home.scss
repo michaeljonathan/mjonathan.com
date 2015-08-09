@@ -89,6 +89,17 @@
 	.slice--home-n2 {
 		background-color: #f0f0f0;
 		@media (min-width: $desk-min) {
+			.slice_image {
+				float: left;
+				width: 50%;
+			}
+			.slice_text {
+				float: right;
+				width: 50%;
+				text-align: center;
+			}
+		}
+		@media (min-width: 1200px) {
 			.cc {
 				position: relative;
 				padding-bottom: 40px;
@@ -120,6 +131,14 @@
 				float: left;
 				width: 50%;
 				margin-top: 45px;
+			}
+		}
+		@media (max-width: $mob-max) {
+			.slice_image {
+				text-align: center;
+				img {
+					max-height: 250px;
+				}
 			}
 		}
 	}
