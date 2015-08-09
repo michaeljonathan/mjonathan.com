@@ -3,25 +3,35 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Michael Jonathan</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="/dist/app.css">
 		<script src="/dist/vendor.js"></script>
 		<script src="/dist/app.js"></script>
 	</head>
-	<body>
+	<body class="mj-app" onstatechange-scrolltop>
 		<header>
-			<div class="cc">
-				<h1>Michael Jonathan</h1>
-				<a ui-sref="home">Hi</a>
-				<a ui-sref="projects.list">Projects</a>
-				<a ui-sref="about">About</a>
+			<div class="header_contents" header-onscroll-resize>
+				<div class="cc">
+					<div class="logo">
+						<img src="/images/logo-main.png" alt="Michael Jonathan">
+					</div>
+					<nav>
+						<a ui-sref="home" ng-class="{ active: $navState.includes('home') }">Hi</a>
+						<a ui-sref="projects.list" ng-class="{ active: $navState.includes('projects') }">Projects</a>
+						<a ui-sref="about" ng-class="{ active: $navState.includes('about') }">About</a>
+						<a href="mailto:me@myemail.com"><i class="fa fa-envelope"></i></a>
+						<a href="https://linkedin.com/in/mjonathan"><i class="fa fa-linkedin"></i></a>
+					</nav>
+				</div>
 			</div>
 		</header>
 		<div class="main-view" ui-view></div>
 		<footer>
 			<div class="cc">
-				<p>Michael Jonathan</p>
-				<a href="mailto:me@myemail.com">Mail</a>
-				<a href="https://linkedin.com/in/mjonathan">In</a>
+				<img class="footer_logo" src="/images/logo-footer.png" alt="Michael Jonathan">
+				<div class="footer_vr"></div>
+				<a class="footer_a" href="mailto:me@myemail.com"><i class="fa fa-envelope"></i></a>
+				<a class="footer_a" href="https://linkedin.com/in/mjonathan"><i class="fa fa-linkedin"></i></a>
 			</div>
 		</footer>
 	</body>

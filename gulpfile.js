@@ -20,7 +20,9 @@ var sassSrc = './app/scss/**/*.scss',
 gulp.task('sass', function() {
 	gulp.src(sassSrc)
 		.pipe(sass().on('error', sass.logError))
-		.pipe(minifyCss())
+		.pipe(minifyCss({
+			keepSpecialComments: 0
+		}))
 		.pipe(gulp.dest(compileDest));
 });
 

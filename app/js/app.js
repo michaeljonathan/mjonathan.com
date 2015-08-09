@@ -67,3 +67,10 @@ mjApp.factory('projects', ['$http', function($http) {
 		get: get
 	};
 }]);
+
+// Run
+mjApp.run(['$rootScope', '$state', '$window', function($rootScope, $state, $window) {
+
+	$rootScope.$navState = $state;
+
+}]);
