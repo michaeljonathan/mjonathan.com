@@ -1,3 +1,234 @@
-<div class="slice slice--project-intro">
-	<h1>N2</h1>
+<div class="page--project page--project--n2">
+
+	<div class="slice slice--project-intro">
+		<div class="cc">
+			<div class="slice_image">
+				<img src="/images/projects/n2/image-main.png" alt="">
+			</div>
+			<div class="slice_text">
+				<p class="preheading">University Project</p>
+				<h2>N2: University Notices V2</h2>
+				<p class="slice_snippet">
+					N2 is a user-customizable web-based announcement board for university students.<br/>
+					<br/>
+					It was developed with Django, a Python framework, as a university project in a team of three.<br/>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="slice slice--project">
+		<div class="cc">
+			<p>
+				Students at <a href="http://www.unimelb.edu.au/" target="_blank">the University of Melbourne</a> are provided with many opportunities to be actively involved in clubs and societies, attend events, explore career prospects and get engaged in other activities that enhance their student experience.<br>
+				<br>
+				It is essential that students have access to a medium of communication for these matters, so that they are always informed of great opportunities.<br>
+				<br>
+				Unfortunately, the university does not provide a single channel to broadcast all these notices, and instead uses an unorganized mix of legacy systems including the university portal, e-mail, and other disjoint web services.
+			</p>
+		</div>
+	</div>
+
+	<div class="slice slice--project">
+		<div class="cc">
+			<h2>The Current Siloed Systems</h2>
+			<img src="/images/projects/n2/current_1.png" alt="" class="screenshot--small">
+			<p>
+				Notices on opportunities and events are provided through many mediums. One of the main channels include the notification tab on the university online portal. This mainly consist of administrator-moderated broadcast messages from clubs of interest around the university, yet they are mixed with official university announcements, which really are of a different nature. What students receive in the portal are filtered based on their residency status, campus location and course of study, and this filter is not user-configurable.
+			</p>
+			<img src="/images/projects/n2/current_2.png" alt="" class="screenshot--small">
+			<p>
+				Some other announcements, which come from individual departments in the university, doesn't come through the portal, but instead through the Blackboard learning management system.
+			</p>
+			<img src="/images/projects/n2/current_3.png" alt="" class="screenshot--small">
+			<p>
+				Then again, some other notices are posted on the department's on web pages.
+			</p>
+			<img src="/images/projects/n2/current_4.png" alt="" class="screenshot--small">
+			<p>
+				Furthermore employment-related events are sometimes placed on the university's career services online site instead.
+			</p>
+			<img src="/images/projects/n2/current_5.png" alt="" class="screenshot--small">
+			<p>
+				Occasionally they choose to broadcast notices via e-mail.
+			</p>
+			<img src="/images/projects/n2/current_6.png" alt="" class="screenshot--small">
+			<p>
+				Students who simply want to broadcast messages sometimes simply go through a more familiar medium, such as Facebook.
+			</p>
+			<h3>The Problem of Having All These Mediums</h3>
+			<p>
+				<strong>There is no easy way for students to find out about all events and opportunities of interest, nor is there a simple way to keep track of all posts that they are interested in.</strong> If they remember something that they were interested in and wanted to recall the details, they must also remember on which medium they saw it, otherwise it will be very hard to search for them.<br>
+				<br>
+				<strong>Most channels do not allow embedding of images or video, limiting content to be text-based only.</strong> This greatly reduces the appeal of notices.<br>
+				<br>
+				In addition, not all mediums provide the facility to book into events. For those that do, if they chose to attend an event, they may or may not be reminded of it closer to the date.<br>
+				<br>
+				Furthermore, there is no easy way to communicate between students and notice broadcasters.
+			</p>
+		</div>
+	</div>
+
+
+	<div class="slice slice--project">
+		<div class="cc">
+
+			<h2>The Development Process</h2>
+			<p class="p--center">
+				<span class="text--large">We decided to create a consolidated platform for all notices. Announcements, events, career opportunities, all at one place. It will be created as a web application, accessible in most modern browsers.</span>
+			</p>
+			<p>
+				It will allow students to <strong>filter notices</strong>, keep track of those of <strong>interest</strong>, and <strong>post their own notices</strong>.<br>
+				<br>
+				It comes with <strong>full moderator support</strong>, which allows university staff to approve student-created posts before it is broadcasted.<br>
+				<br>
+				We are naming it N2, which stands for Notices Version 2. It is developed by myself and two friends, David Andika and Jonathan Wongsodihardjo.
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>Functionality</h3>
+			<p>
+				<strong>Notices are organized using tags.</strong> Each tag belongs to a category, and these are used to label notices to simplify searching and filtering.<br>
+				<br>
+				<strong>There are three user levels</strong>, each of them has access to the following features:<br>
+			</p>
+			<ol>
+				<li>All Users
+					<ul>
+						<li>Browse notices, search by keyword and tags, view bookmarks</li>
+						<li>View notices in detail</li>
+						<li>Like and bookmark notices</li>
+						<li>Create notices, tag them then submit them, subject to moderation</li>
+					</ul>
+				</li>
+				<li>Moderators
+					<ul>
+						<li>Manage notices - approve or disapprove submitted notices; edit or delete existing ones</li>
+						<li>Manage tags - add, edit and delete tags</li>
+						<li>Manage user accounts - block users, change permissions</li>
+					</ul>
+				</li>
+				<li>Administrators
+					<ul>
+						<li>Full access to all user accounts - can appoint moderators</li>
+					</ul>
+				</li>
+			</ol>
+
+			<div class="spacer"></div>
+
+			<h3>Front-end Design</h3>
+			<img src="/images/projects/n2/p_n2_diag_usecase.png" alt="">
+			<img src="/images/projects/n2/p_n2_diag_access.png" alt="" class="diagram--sw">
+			<p>
+				The use case diagram and the access diagram above models the user experience of our application.
+			</p>
+			<img src="/images/projects/n2/PowerPoint.png" alt="" class="diagram--sw">
+			<img src="/images/projects/n2/PowerPoint2.png" alt="" class="diagram--sw">
+			<p>
+				The exact layout of the interface is first designed digitally on PowerPoint, and then implemented for web in HTML, CSS and JavaScript through manual coding.
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>Back-end Design</h3>
+			<img src="/images/projects/n2/n2_py_django.png" alt="" style="width: 300px;">
+			<p>
+				N2 is developed using <a href="https://www.djangoproject.com/" target="_blank">the Django framework</a>. This is a highly popular Python web development framework, used in well-known online services such as <a href="https://instagram.com/" target="_blank">Instagram</a> and <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>.<br>
+				<br>
+				The Django framework follows the <strong>Model-View-Controller (MVC) design pattern</strong>. The front-end implementation is the View component. We write Python scripts containing the application logic, which is the Controller component. Finally, data is stored in a persistent database, the Model component.
+			</p>
+			<img src="/images/projects/n2/n2_mysql.png" alt="" style="width: 150px;">
+			<p>
+				We chose the MySQL database is selected for its high compatibility and ease of maintenance, and the InnoDB storage engine for better consistency.
+			</p>
+			<img src="/images/projects/n2/p_n2_diag_er.png" alt="" class="diagram--sw">
+			<p>
+				The database for N2 is carefully designed to meet data storage needs efficiently. It must cover main objects such as users and notices, and also simpler objects including likes and bookmarks.
+			</p>
+
+			<div class="spacer"></div>
+			<h3>Security Features</h3>
+			<p>
+				<strong>Permission Control</strong><br>
+				The three levels of user permissions prevent unauthorized changes and broadcast of notices.<br>
+				<br>
+				<strong>University Member Verification</strong><br>
+				Upon registration, N2 will send an email verification to authenticate membership of the educational institution. Emails can only be sent to addresses within a specific domain which belongs to the university.<br>
+				<br>
+				<strong>Data Protection</strong><br>
+				Django's built in object-relational mapping system means that all SQL queries are generated by Django. They are automatically escaped, making it injection-proof.<br>
+				<br>
+				<strong>Web Security</strong><br>
+				N2 utilizes Python libraries and Django's security features to eliminate both XSS and CSRF attacks.
+			</p>
+
+		</div>
+	</div>
+
+
+	<div class="slice slice--project">
+		<div class="cc">
+			<h2>The Result</h2>
+			<img src="/images/projects/n2/image-main.png" alt="" style="width: 900px;">
+			<p>
+				<strong>N2 is a user-customizable web-based announcement board for university students.</strong><br>
+				<br>
+				It provides a unified notices management experience for all members of the university.
+			</p>
+			<img src="/images/projects/n2/n2_login.png" alt="" class="screenshot">
+			<p>
+				All users need to login, or register if they haven't done so.
+			</p>
+			<img src="/images/projects/n2/n2_login_register.png" alt="" class="screenshot">
+			<img src="/images/projects/n2/n2_welcome.png" alt="" class="screenshot">
+			<p>
+				Upon registration they will be required to supply a university email address, which will be used to verify membership.
+			</p>
+			<img src="/images/projects/n2/n2_home.png" alt="" class="screenshot">
+			<p>
+				In the homepage, students can see all posts. They can also search based on keywords and tags.
+			</p>
+			<img src="/images/projects/n2/n2_notice.png" alt="" class="screenshot">
+			<p>
+				They are able to see any individual post in detail. <strong>They can 'like' them, and bookmark them for future reference - these functionalities use Ajax</strong>, so only the buttons are updated instead of the entire page being refreshed. The total number of likes are displayed alongside the total number of views.
+			</p>
+			<img src="/images/projects/n2/n2_compose.png" alt="" class="screenshot">
+			<p>
+				Anyone can create a post, complete with a display image and video embedding from YouTube or Vimeo. If they have normal permissions, their post will be subject to moderation before it can be visible to others.
+			</p>
+			<img src="/images/projects/n2/n2_profile.png" alt="" class="screenshot">
+			<p>
+				Users can configure their preferences for tags of posts that they wish to see by default.
+			</p>
+			<img src="/images/projects/n2/n2admin_login.png" alt="" class="screenshot">
+			<img src="/images/projects/n2/n2admin_approvenotices.png" alt="" class="screenshot">
+			<img src="/images/projects/n2/n2admin_user.png" alt="" class="screenshot">
+			<p>
+				The N2 Administrator interface allows moderators and administrators to manage posts, tags and user permissions.
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>Feature Extensions For The Future</h3>
+			<p>
+				N2 can be extended to include the following features in the future:<br>
+				<br>
+				<strong>Integration with the university account database.</strong> This should enable single sign-in, and eliminate the need to register for accounts.<br>
+				<br>
+				<strong>Security can be improved</strong> by using HTTPS, and CAPTCHA can be used to prevent spam.<br>
+				<br>
+				<strong>Students can book into events</strong>, and then be reminded of them via e-mail as the events approach. Event organizers can then have access to a guest list, and students can have access to a simple list of all events they have booked for.<br>
+				<br>
+				<strong>The keyword search feature</strong> of N2 has a simple implementation at the moment, and the algorithms can be much improved for better performance and accuracy.<br>
+				<br>
+				<strong>Students can mark notices as duplicates</strong> of each other, and moderators can monitor this to consolidate redundant posts.<br>
+				<br>
+				<strong>The user interface can be enhanced</strong> to support mobile phones and other portable devices.
+			</p>
+
+		</div>
+	</div>
+
 </div>

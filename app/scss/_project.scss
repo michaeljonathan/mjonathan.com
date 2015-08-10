@@ -24,6 +24,7 @@
 		}
 
 		.slice_text {
+			margin-top: 30px;
 			color: $primary-color;
 			@media (min-width: $desk-min) {
 				float: left;
@@ -55,14 +56,25 @@
 		color: $primary-color;
 
 		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 30px;
 			@media (max-width: $mob-max) {
 				margin-bottom: 20px;
 			}
 			&.screenshot {
 				width: 800px;
+			}
+			&.screenshot--small {
+				width: 550px;
+			}
+			&.screenshot--snb {
 				box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 				border: 1px solid #DADADA;
+			}
+			&.diagram--sw {
+				width: 700px;
 			}
 			&.diagram--wide {
 				width: 900px;
@@ -138,6 +150,10 @@
 			}
 		}
 
+		.spacer {
+			height: 40px;
+		}
+
 		&:after {
 			display: block;
 			content: '';
@@ -167,9 +183,43 @@
 .page--project--psalmist {
 	.slice--project-intro {
 		.slice_text {
-			margin-top: 30px;
 			h2 {
 				font-size: 72px;
+			}
+		}
+	}
+}
+
+/* Project (N2) */
+.page--project--n2 {
+	.slice--project-intro {
+		.slice_image {
+			@media (min-width: $desk-min) {
+				width: 60%;
+			}
+		}
+		.slice_text {
+			margin-top: 15px;
+			@media (min-width: $desk-min) {
+				width: 40%;
+			}
+		}
+	}
+
+	.slice--project {
+		ol, ul {
+			max-width: 720px;
+			text-align: left;
+			padding-left: 30px;
+			font-size: 14px;
+			line-height: 22px;
+			margin: 0 auto;
+		}
+		.cc>ol {
+			font-weight: 600;
+			ul {
+				font-weight: initial;
+				list-style-type: disc;
 			}
 		}
 	}
