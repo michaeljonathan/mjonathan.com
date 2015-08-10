@@ -148,11 +148,19 @@
 			margin: 0 auto;
 			opacity: 0.5;
 		}
-		&:last-child:after {
-			display: none;
+	}
+}
+
+.project-detail-footer {
+	text-align: center;
+	.cc {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		a {
+			font-family: $heading-font;
+			font-size: 24px;
 		}
 	}
-
 }
 
 /* Project (Psalmist) */
