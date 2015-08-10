@@ -1,13 +1,15 @@
 .page--projects-list {
 	padding: 0 15px;
+	overflow: hidden;
+	background-color: $primary-color;
 
 	.project-li {
 		display: block;
 		max-width: 800px;
-		margin: 20px auto;
+		margin: 30px auto;
 		padding: 40px;
 		text-align: center;
-		border: 2px solid $primary-color;
+		border: 2px solid #888;
 		@media (max-width: $mob-max) {
 			padding: 25px;
 		}
@@ -22,12 +24,13 @@
 
 		.preheading {
 			font-weight: 400;
-			color: $primary-color;
+			color: #fff;
 		}
 
 		h2 {
 			margin-top: 5px;
 			text-transform: uppercase;
+			color: $alt-color;
 			@media (min-width: $desk-min) {
 				font-size: 60px;
 			}
@@ -40,14 +43,14 @@
 		hr {
 			margin-top: 15px;
 			border: none;
-			border-top: 1px solid $primary-color;
+			border-top: 1px solid #fff;
 			width: 50%;
 			opacity: 0.3;
 		}
 
 		.description {
 			margin-top: 15px;
-			color: $primary-color;
+			color: #fff;
 			@media (min-width: $desk-min) {
 				max-width: 70%;
 			}
