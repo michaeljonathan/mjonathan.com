@@ -1,0 +1,168 @@
+/* Project (Common) */
+.page--project {
+
+	img {
+		max-width: 100%;
+	}
+
+	.slice--project {
+
+		.cc {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
+
+	.slice--project-intro {
+		background-color: #f0f0f0;
+
+		.slice_image {
+			@media (min-width: $desk-min) {
+				float: right;
+				width: 50%;
+			}
+		}
+
+		.slice_text {
+			color: $primary-color;
+			@media (min-width: $desk-min) {
+				float: left;
+				width: 50%;
+			}
+
+			h2 {
+				margin-top: 5px;
+				color: $alt-color;
+				font-size: 48px;
+			}
+
+			.slice_snippet {
+				margin-top: 18px;
+			}
+
+			.slice_link {
+				display: block;
+				margin-top: 18px;
+				text-transform: uppercase;
+				font-family: $heading-font;
+				font-size: 24px;
+			}
+		}
+	}
+
+	.slice--project {
+		text-align: center;
+		color: $primary-color;
+
+		img {
+			margin-bottom: 30px;
+			@media (max-width: $mob-max) {
+				margin-bottom: 20px;
+			}
+			&.screenshot {
+				width: 800px;
+				box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+				border: 1px solid #DADADA;
+			}
+			&.diagram--wide {
+				width: 900px;
+			}
+			&.img--for-desktop {
+				@media (max-width: $mob-max) {
+					display: none;
+				}
+			}
+			&.img--for-mobile {
+				@media (min-width: $desk-min) {
+					display: none;
+				}
+			}
+		}
+
+		h2 {
+			font-size: 60px;
+			margin-bottom: 30px;
+			@media (max-width: $mob-max) {
+				font-size: 42px;
+				margin-bottom: 20px;
+			}
+		}
+
+		h3 {
+			font-size: 44px;
+			margin-bottom: 20px;
+			@media (max-width: $mob-max) {
+				font-size: 36px;
+			}
+		}
+
+		h4 {
+			font-size: 32px;
+			margin-bottom: 18px;
+		}
+
+		p {
+			text-align: left;
+			max-width: 720px;
+			line-height: 22px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+
+			.text--large {
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: 600;
+				@media (max-width: $mob-max) {
+					font-size: 18px;
+					line-height: 24px;
+				}
+			}
+
+			.text--code {
+				font-size: 13px;
+				font-family: 'Consolas', 'Droid Sans Mono', monospace;
+				background-color: #f3f3f3;
+				padding-left: 3px;
+				padding-right: 3px;
+				word-wrap: break-word;
+			}
+
+			a {
+				font-weight: 600;
+				display: inline-block;
+			}
+
+			&.p--center {
+				text-align: center;
+			}
+		}
+
+		&:after {
+			display: block;
+			content: '';
+			width: 600px;
+			max-width: 70%;
+			background-color: $primary-color;
+			height: 2px;
+			margin: 0 auto;
+			opacity: 0.5;
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+
+}
+
+/* Project (Psalmist) */
+.page--project--psalmist {
+	.slice--project-intro {
+		.slice_text {
+			margin-top: 30px;
+			h2 {
+				font-size: 72px;
+			}
+		}
+	}
+}

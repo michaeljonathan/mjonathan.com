@@ -6,6 +6,7 @@
 
 $primary-color: #333;
 $alt-color: #b80;
+$alt-color-light: #dca820;
 
 $heading-font: 'BebasNeue', 'Helvetica', 'Arial', sans-serif;
 $text-font: 'Raleway', 'Helvetica', 'Arial', sans-serif;
@@ -61,6 +62,9 @@ h2 {
 a {
 	text-decoration: none;
 	color: $alt-color;
+	&:hover {
+		color: $alt-color-light;
+	}
 }
 
 p {
@@ -83,10 +87,6 @@ p {
 	@media (max-width: $mob-max) {
 		padding: 35px 18px;
 	}
-}
-
-.slice {
-	min-height: 200px;
 }
 
 /* Header */
@@ -257,3 +257,4 @@ footer {
 
 @import "home";
 @import "projectslist";
+@import "project";
