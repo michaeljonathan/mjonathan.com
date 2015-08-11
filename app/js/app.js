@@ -73,8 +73,12 @@ mjApp.run(['$rootScope', '$state', '$window', function($rootScope, $state, $wind
 
 	$rootScope.$navState = $state;
 
-	// Autoscroll when nav changes
+	// Autoscroll and trigger loading bar when nav changes
+	$rootScope.$on('$stateChangeStart', function() {
+		$rootScope.isStateChanging = true;
+	});
 	$rootScope.$on('$stateChangeSuccess', function() {
+		$rootScope.isStateChanging = false;
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	});
 

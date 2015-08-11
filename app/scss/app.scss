@@ -103,6 +103,30 @@ header {
 		transition: 150ms all ease;
 	}
 
+	.loading-bar {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		opacity: 0;
+		z-index: 1;
+		height: 3px;
+		background-color: $alt-color;
+
+		@-webkit-keyframes loading-bar-animation {
+			0% { width: 0%; }
+			100% { width: 100%; }
+		}
+		@keyframes loading-bar-animation {
+			0% { width: 0%; }
+			100% { width: 100%; }
+		}
+		&.is-loading {
+			opacity: 1;
+			-webkit-animation: loading-bar-animation 3s ease-out;
+			animation: loading-bar-animation 3s ease-out;
+		}
+	}
+
 	.header_contents {
 		width: 100%;
 		background-color: #fff;
