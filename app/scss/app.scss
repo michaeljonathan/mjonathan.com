@@ -161,32 +161,37 @@ header {
 			margin: 0 20px;
 			border-bottom: 3px solid transparent; // space reservation
 			transition: unset;
+			&:not(.active):hover {
+				color: $alt-color;
+			}
 			@media (max-width: 899px) {
 				margin: 0 10px;
 			}
 			@media (max-width: $mob-max) {
 				font-size: 14px;
 				letter-spacing: 1px;
+				&.active {
+					border-bottom-color: $alt-color;
+				}
 			}
-			&:not(.active):hover {
-				color: $alt-color;
-			}
-			&:after {
-				display: block;
-				content: '';
-				position: absolute;
-				top: 100%;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-				width: 0;
-				height: 3px;
-				background-color: $alt-color;
-				transition: 150ms width ease-out;
-			}
-			&.active:after,
-			&:hover:after {
-				width: 100%;
+			@media (min-width: $desk-min) {
+				&:after {
+					display: block;
+					content: '';
+					position: absolute;
+					top: 100%;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					width: 0;
+					height: 3px;
+					background-color: $alt-color;
+					transition: 150ms width ease-out;
+				}
+				&.active:after,
+				&:hover:after {
+					width: 100%;
+				}
 			}
 		}
 	}
