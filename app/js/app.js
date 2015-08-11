@@ -73,4 +73,9 @@ mjApp.run(['$rootScope', '$state', '$window', function($rootScope, $state, $wind
 
 	$rootScope.$navState = $state;
 
+	// Autoscroll when nav changes
+	$rootScope.$on('$stateChangeSuccess', function() {
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	});
+
 }]);
