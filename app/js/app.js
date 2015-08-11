@@ -69,17 +69,22 @@ mjApp.factory('projects', ['$http', function($http) {
 }]);
 
 // Run
-mjApp.run(['$rootScope', '$state', '$window', function($rootScope, $state, $window) {
+mjApp.run(['$rootScope', '$state', '$window', '$location', function($rootScope, $state, $window, $location) {
 
 	$rootScope.$navState = $state;
 
-	// Autoscroll and trigger loading bar when nav changes
+	// Show loading bar when starting to navigate
 	$rootScope.$on('$stateChangeStart', function() {
 		$rootScope.isStateChanging = true;
 	});
+
+	// Hide loading bar, scroll to top and track page view when navigated
 	$rootScope.$on('$stateChangeSuccess', function() {
 		$rootScope.isStateChanging = false;
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
+		$window.ga('send', 'pageview', {
+			page: $location.url()
+		});
 	});
 
 }]);
