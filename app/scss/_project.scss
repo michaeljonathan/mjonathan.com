@@ -224,3 +224,27 @@
 		}
 	}
 }
+
+/* Project (KIT) */
+.page--project--kit {
+	.slice--project-intro {
+		.slice_text {
+			@media (min-width: $desk-min) {
+				margin-top: 120px;
+			}
+		}
+	}
+	.slice--project {
+		.img--kit-phone {
+			max-height: 400px;
+		}
+		.images-row {
+			text-align: center;
+			img {
+				display: inline;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
+	}
+}

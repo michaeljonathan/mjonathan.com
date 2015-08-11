@@ -1,3 +1,225 @@
-<div class="slice slice--project-intro">
-	<h1>KIT</h1>
+<div class="page--project page--project--kit">
+
+	<div class="slice slice--project-intro">
+		<div class="cc">
+			<div class="slice_image">
+				<img src="/images/projects/kit/image-main.png" alt="">
+			</div>
+			<div class="slice_text">
+				<p class="preheading">University Project</p>
+				<h2>KIT: Keep-In-Touch</h2>
+				<p class="slice_snippet">
+					KIT is a social emergency alert system for mobile devices.<br/>
+					<br/>
+					It was developed with the Django Python framework, as a university project in a team of three.<br/>
+				</p>
+				<a class="slice_link" href="https://bitbucket.org/m_jonathan/swen30007-group-11/src" target="_blank"><i class="fa fa-bitbucket"></i> View on Bitbucket</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="slice slice--project">
+		<div class="cc">
+			<h2>The Current Siloed Systems</h2>
+			<img src="/images/projects/kit/kit_current.jpg" alt="" style="width: 400px;">
+			<p>
+				In these recent years, it has been increasingly common for <strong>elderly and disabled people</strong> who live alone to be equipped with a <strong>medical alarm</strong>. Their families pay for these services with a good intention, that is, to ensure their well-being.<br>
+				<br>
+				According to <a href="http://en.wikipedia.org/wiki/Medical_alarm" target="_blank">its Wikipedia page</a>,<br>
+				<br>
+				<strong><em>"A medical alarm is an alarm system designed to signal the presence of a hazard requiring urgent attention and to summon emergency medical personnel."</em></strong><br>
+				<br>
+				<em>"Typical systems have a wireless pendant or <strong>transmitter</strong> that can be activated in an emergency. When the medical alarm is activated, the signal is transmitted to an alarm monitoring company's central station, other emergency agency or other programmed phone numbers. Medical personnel are then dispatched to the site where the alarm was activated."</em><br>
+				<br>
+				In addition to the transmitter, the homes of these people are fitted with an intercom-like <strong>base station</strong>. They are expected to press a dedicated button on this base station on a daily basis to signal that they are okay. If they fail to press the button any day, within a few hours monitoring personnel will attempt to contact them through the intercom to check on their well-being.<br>
+				<br>
+				Let us refer to them as <strong>assisted persons</strong>.<br>
+			</p>
+		</div>
+	</div>
+
+	<div class="slice slice--project">
+		<div class="cc">
+			<h3>The Problem of This System</h3>
+			<div class="spacer"></div>
+			<h4>The Transmitter</h4>
+			<img src="/images/projects/kit/kit_transmitter.jpg" alt="" style="width: 300px;">
+			<p>
+				<strong>The transmitter must be worn at all times by these assisted persons</strong>; otherwise they may not have the chance to reach it in the event that they require urgent help.<br>
+				<br>
+				<strong>However, it may actually be undesirable to have to carry this device all day, every day.</strong> Not only is it very rarely used, but it also signifies that they are weaker than others. Assisted persons are naturally unmotivated to wear this "pendant of dependency", and they may decide to just leave it in their rooms.
+			</p>
+			<div class="spacer"></div>
+			<h4>The Base Station</h4>
+			<img src="/images/projects/kit/kit_base_station.jpg" alt="" style="width: 300px;">
+			<p>
+				<strong>It is very easy to forget to "press the OK button" every day on the base station.</strong> Not only is there no reminder whatsoever, but also, <strong>no human feedback is provided when the button is pressed</strong>, giving a demotivating impression that the button does nothing.<br>
+				<br>
+				Moreover, other family members are not notified when this button is pressed. Families might only receive communication upon emergencies. As a result, <strong>the family still feels disconnected</strong>.<br>
+				<br>
+				<span class="text--large">A team of four - me and three friends - are assigned to create a mobile application that improves upon the medical alarm in order to address its problems, while preserving all of its functionality.</span>
+			</p>
+		</div>
+	</div>
+
+	<div class="slice slice--project">
+		<div class="cc">
+
+			<h2>The Development Process</h2>
+
+			<div class="spacer"></div>
+
+			<h3>The Aim</h3>
+			<p>
+				<strong>The application needs to cover the functionality of both the transmitter and the base station.</strong> It must allow assisted persons to request for help and to broadcast their well-being.<br>
+				<br>
+				Unlike a "strange" pendant, assisted people often use their smartphones throughout the day and so carry them wherever they go. By creating a mobile application, we aim to <strong>create a system that will be ubiquitous in their daily lives</strong>, and does not feel like a burden to use. They simply need to use the system from their smartphones.
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>The Solution</h3>
+			<img src="/images/projects/kit/KIT2.png" alt="" style="width: 200px; max-width: 50%;">
+			<p>
+				We decide to name our application <strong>Keep-In-Touch</strong>, or simply KIT for short.<br>
+				<br>
+				We decided to develop the application for <a href="https://www.android.com/" target="_blank">Android</a>, and so we wrote it in Java. At time of development, <a href="http://news.cnet.com/8301-1035_3-57610229-94/android-snags-record-81-percent-of-smartphone-market/" target="_blank">Android is the world's most popular smartphone operating system</a>, and is available across a wide range of devices from many brands and price ranges. This makes KIT easily accessible by many smartphone users.<br>
+				<br>
+				It is important that the system supports <strong>rapid exchange of messages between devices</strong>, because at times these messages may be urgent. In addition, the application must consume as little power as possible, to prevent battery depletion at critical times.<br>
+				<br>
+				We also want the application to address the issue of lacking social interaction. We want people to look forward to using our application, and so user experience matters a lot. <strong>The application must be pleasant to use, and should promote increased communication.</strong><br>
+				<br>
+				We worked on KIT during the last semester of university in a team of four, consisting of me and three friends, namely David Andika, Jonathan Wongsodihardjo and Winston Widjaya. We used <a href="http://bitbucket.org/m_jonathan/swen30007-group-11">a Git repository</a> via Bitbucket.<br>
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>Front-end Design</h3>
+			<img src="/images/projects/kit/PGPaperProto.png" alt="" class="diagram--wide">
+			<img src="/images/projects/kit/PPaperProto.png" alt="" class="diagram--wide">
+			<p>
+				We developed <strong>paper prototypes</strong> to help us fine-tune the user experience from the start, so we know well what to create through code. Finally, <strong>we implemented the layout in XML for Android</strong>.
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>Back-end Design</h3>
+			<img src="/images/projects/kit/PArchitecture.png" alt="" class="diagram--wide">
+			<p>
+				We chose to use a server powered by <a href="http://www.parse.com/" target="_blank">Parse</a>, and allow all our devices to communicate to others only through this server. This allows for a faster, more efficient message broadcasting when compared to P2P via SMS or email.<br>
+				<br>
+				The application is only designed to initiate <strong>downloading of data only once during login, and then waits for push notifications only</strong>. It never needs to query the server for updates, which reduces server load as well as prolong battery life of the mobile device. However, most importantly, push notifications enable broadcast messages to be immediately received by devices.
+			</p>
+			<img src="/images/projects/kit/PClassDiag.png" alt="" class="diagram--wide">
+			<img src="/images/projects/kit/PInteractionDiag.png" alt="" class="diagram--wide">
+			<p>
+				<strong>We created a thoughtful design of the software architecture of the client application.</strong> It is desirable that new functionality can always be quickly added, and that the source code be easily maintained and understood. Each module should also have separate concerns to minimize coupling, but we do our best to maximize cohesion in each.<br>
+				<br>
+				<span class="text--large">UI</span><br>
+				The User Interface (UI) module has no logic concerns. They work together with the layout XMLs to visually interact with the user, but passes all commands to the main KIT module.
+				<br>
+				<span class="text--large">KIT Logic</span><br>
+				The KIT module acts as a bridge between the UI and Account modules, to keep them cleanly separated from each other. It first verifies and then translates the commands received from the UI module to the Account module, which then takes action.<br>
+				<br>
+				<span class="text--large">Account Management</span><br>
+				The Account module manages the current state of the application and stores current data. It acts as a cache so that the application can be easily navigated through without the need to continuously query the server for every piece of information. It updates its state when push notifications are received. Communication to the server is done through a separate module.<br>
+				<br>
+				<span class="text--large">Communication</span><br>
+				The Communication module acts as a bridge between the Account module and the Parse server. Only this module performs data exchanges through the internet, speaking in the language of the Parse server.
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>Testing</h3>
+			<img src="/images/projects/kit/PKITTest2.png" alt="" class="screenshot">
+			<p>
+				We wrote <strong>unit tests</strong> for coded modules of the application to ensure correctness - this was done with aid of the <a href="https://code.google.com/p/mockito/" target="_blank">Mockito</a> framework. We also prepared <strong>automated interaction tests</strong> using <a href="https://code.google.com/p/robotium/" target="_blank">Robotium</a> to make sure that the user experience will consistently meet expectations.<br>
+				<br>
+				We also managed to complete a quick <strong>usability testing session</strong> with one of our prototypes, and used its results to make some improvements in our user interface.
+			</p>
+
+		</div>
+	</div>
+
+	<div class="slice slice--project">
+		<div class="cc">
+
+			<h2>The Result</h2>
+			<img src="/images/projects/kit/image-main.png" alt="" style="max-height: 400px;">
+			<p>
+				<strong>KIT is an integrated medical alarm - mini social network solution.</strong><br>
+				<br>
+				KIT can easily be installed on devices already being carried around by many <strong>assisted persons</strong>, namely their own smartphones. KIT should also be installed on devices of <strong>carers</strong>, that is, people who are interested in the well-being of assisted persons, which may include their own families as well as dedicated monitoring personnel.
+			</p>
+			<div class="images-row">
+				<img src="/images/projects/kit/kit_login_htc.png" alt="" class="img--kit-phone">
+				<img src="/images/projects/kit/kit_register_htc.png" alt="" class="img--kit-phone">
+			</div>
+			<p>
+				<strong>Every user needs to log in once KIT is installed, or register if they haven't done so.</strong><br>
+				<br>
+				There is no distinction between an account for assisted persons and for carers. An assisted person can be a carer for others, too.
+			</p>
+			<div class="images-row">
+				<img src="/images/projects/kit/kit_status_help_request_htc.png" alt="" class="img--kit-phone">
+				<img src="/images/projects/kit/kit_popup.png" alt="" class="img--kit-phone">
+			</div>
+			<p>
+				<strong>As a replacement to the transmitter, assisted persons can use KIT to alert all of their carers in the event that they need urgent medical attention.</strong><br>
+				<br>
+				In fact, at the tap of a button, they can further broadcast whether or not they are in a life-threatening situation. Furthermore, if still capable, they are able to add a custom message, stating what happened.
+			</p>
+			<div class="images-row">
+				<img src="/images/projects/kit/kit_im_okay_enter_message.png" alt="" class="img--kit-phone">
+				<img src="/images/projects/kit/kit_status_im_okay.png" alt="" class="img--kit-phone">
+			</div>
+			<p>
+				<strong>As a replacement to the base station, assisted persons can also use KIT to let all of their carers know that they are doing well, every day.</strong><br>
+				<br>
+				Not only are they able to only announce of their well-being, but they can also add a custom message to each "OK" broadcast, such as "Good morning" or "Just cooked Carbonara!"
+			</p>
+			<img src="/images/projects/kit/kit_updates.png" alt="" class="img--kit-phone">
+			<p>
+				<strong>Carers can easily see all recent updates from people they assist.</strong><br>
+				<br>
+				Emergency updates requiring immediate attention will always be placed on top. Updates older than 24 hours will follow, as these belong to people that have not been updating their statuses for a while, and therefore may need attention. All other updates go below.
+			</p>
+			<div class="images-row">
+				<img src="/images/projects/kit/kit_replying.png" alt="" class="img--kit-phone">
+				<img src="/images/projects/kit/kit_receive_notification_about_reply.png" alt="" class="img--kit-phone">
+			</div>
+			<p>
+				<strong>To improve social interaction, KIT lets carers reply to any update by tapping on it from the list of updates.</strong><br>
+				<br>
+				It's similar to Facebook's commenting system on status updates. This encourages communication between assisted persons and their carers.
+			</p>
+			<div class="images-row">
+				<img src="/images/projects/kit/kit_settings.png" alt="" class="img--kit-phone">
+				<img src="/images/projects/kit/kit_add_assisted.png" alt="" class="img--kit-phone">
+				<img src="/images/projects/kit/kit_manage_assisteds_2.png" alt="" class="img--kit-phone">
+			</div>
+			<div class="images-row">
+				<img src="/images/projects/kit/kit_notified_of_carer_request.png" alt="" class="img--kit-phone">
+				<img src="/images/projects/kit/kit_accept_carer.png" alt="" class="img--kit-phone">
+			</div>
+			<p>
+				<strong>Users can add and remove carers and assisted persons.</strong><br>
+				<br>
+				The social management features of KIT are similar to that of Twitter - a carer "follows" a person they want to assist, but in KIT, it is also possible for an assisted person to "ask to be followed" by a carer. Each relationship is one-way, and each relationship request must first be confirmed by the receiver.
+			</p>
+
+			<div class="spacer"></div>
+
+			<h3>Feature Extensions For The Future</h3>
+			<p>
+				Some features have also been thought of, but were not implemented in this version yet due to time constraints.<br>
+				<br>
+				<strong>We can add a reminder for assisted persons who have not updated their status in 24 hours.</strong> This reminds them to signal their well-being every day.<br>
+				<br>
+				<strong>We can also add notifier for carers when a person they assist have not updated their status some time after 24 hours.</strong> This encourages them to personally check on assisted persons who may need attention.
+			</p>
+
+		</div>
+	</div>
+
 </div>
