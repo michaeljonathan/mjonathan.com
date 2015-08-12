@@ -5,6 +5,7 @@ mjApp.directive('headerOnscrollResize', ['$window', function($window) {
 			if ($window.innerWidth >= 720) {
 				angular.element($window).bind('scroll', function() {
 					element.toggleClass('header_contents--smaller', this.pageYOffset > 200);
+					element.toggleClass('header_contents--home-bg', this.pageYOffset > 365);
 				});
 			}
 		}

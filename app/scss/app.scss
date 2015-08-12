@@ -159,6 +159,9 @@ header {
 				max-width: 200px;
 			}
 		}
+		.logo--light {
+			display: none;
+		}
 	}
 
 	nav {
@@ -234,6 +237,46 @@ header {
 				font-size: 14px;
 				letter-spacing: 1px;
 				padding-bottom: 8px;
+			}
+		}
+	}
+
+	&.header--home {
+		height: auto;
+		@media (max-width: $mob-max) {
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.header_contents {
+			background-color: transparent;
+			box-shadow: none;
+			@media (max-width: $mob-max) {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			.cc {
+				background-size: cover;
+				background-position: center bottom;
+			}
+			.logo--light {
+				display: initial;
+			}
+			.logo--dark {
+				display: none;
+			}
+			nav {
+				a {
+					color: #fff;
+				}
+			}
+		}
+
+		.header_contents--home-bg {
+			background-color: $primary-color;
+			.cc {
+				background-image: url('/images/home/home-banner-01.jpg');
 			}
 		}
 	}

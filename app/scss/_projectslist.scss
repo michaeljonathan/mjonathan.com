@@ -2,6 +2,9 @@
 	padding: 0 15px;
 	overflow: hidden;
 	background-color: $primary-color;
+	background-image: url('/images/home/coffee-desk.jpg');
+	background-size: cover;
+	background-position: center;
 
 	.project-li {
 		display: block;

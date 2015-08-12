@@ -10,12 +10,13 @@
 		<script src="/dist/app.js"></script>
 	</head>
 	<body class="mj-app">
-		<header>
+		<header ng-class="{ 'header--home': $navState.includes('home') }">
 			<div class="header_contents" header-onscroll-resize>
 				<div class="loading-bar" ng-class="{ 'is-loading':isStateChanging }"></div>
 				<div class="cc">
 					<div class="logo" ui-sref="home">
-						<img src="/images/logo-main.png" alt="Michael Jonathan">
+						<img src="/images/logo-main.png" class="logo--dark" alt="Michael Jonathan">
+						<img src="/images/logo-main-light.png" class="logo--light" alt="Michael Jonathan">
 					</div>
 					<nav>
 						<a ui-sref="home" ng-class="{ active: $navState.includes('home') }">Hi</a>
