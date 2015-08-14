@@ -116,7 +116,7 @@
 				<strong>We created a thoughtful design of the software architecture of the client application.</strong> It is desirable that new functionality can always be quickly added, and that the source code be easily maintained and understood. Each module should also have separate concerns to minimize coupling, but we do our best to maximize cohesion in each.<br>
 				<br>
 				<span class="text--large">UI</span><br>
-				The User Interface (UI) module has no logic concerns. They work together with the layout XMLs to visually interact with the user, but passes all commands to the main KIT module.
+				The User Interface (UI) module has no logic concerns. They work together with the layout XMLs to visually interact with the user, but passes all commands to the main KIT module.<br>
 				<br>
 				<span class="text--large">KIT Logic</span><br>
 				The KIT module acts as a bridge between the UI and Account modules, to keep them cleanly separated from each other. It first verifies and then translates the commands received from the UI module to the Account module, which then takes action.<br>
